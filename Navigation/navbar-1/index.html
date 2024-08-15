@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="flex justify-between items-center w-11/12 xl:w-full max-w-6xl mx-auto my-10">
+            <div class="text-2xl md:text-4xl font-extrabold order-2 md:order-1">Hockey<span class="text-red-500 relative md:-top-5 md:left-1 -top-3.5 left-0.5 ">,</span>s</div>
+
+            <ul class="order-1 md:order-2 mr-5 md:mr-0 md:ml-0">
+                <li>
+                    <input type="checkbox" name="menu-btn" id="menu-btn" class="hidden">
+                    <label for="menu-btn" href="#" class="menu-btn md:hidden block font-semibold text-xl py-1"><img src="./assets/menu-icon.svg" alt="Menu icon"></label>
+
+                    <ul class="md:items-center absolute md:static px-3 py-2 mt-2 md:mt-0 shadow-md md:shadow-none hidden flex-col md:flex md:flex-row gap-3 md:gap-5 lg:gap-9 z-10 font-semibold rounded-md" id="nav-links">
+                        <li><a href="#" class="text-red-500 hover:text-red-500">Home</a></li>
+                        <li><a href="#" class="hover:text-red-500">About</a></li>
+                        <li><a href="#" class="hover:text-red-500">Pages</a></li>
+                        <li><a href="#" class="hover:text-red-500">Blog</a></li>
+                        <li><a href="#" class="hover:text-red-500">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="nav-buttons order-3 flex-1 md:flex-none flex justify-end">
+                <button class="hidden sm:block mr-4"><img src="./assets/search-icon.svg" alt="search icon"></button>
+                <button class="bg-red-500 px-4 py-2 md:px-6 md:py-3 rounded-lg text-white md:text-xl font-semibold">Get Ticket</button>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

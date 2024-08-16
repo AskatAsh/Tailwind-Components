@@ -9,3 +9,6 @@
 .texts .texts__description{
     color: #FFFFFF99;
 }
+#image-container img{
+    object-position: 0px 35%;
+}

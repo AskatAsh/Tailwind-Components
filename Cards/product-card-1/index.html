@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="flex items-center justify-center h-screen">
+    <div class="card border-2 border-[#1313181A] rounded-2xl p-6 max-[375px]:p-4 max-w-xl w-11/12 flex max-[576px]:flex-col gap-5 max-[576px]:gap-4">
+        <div class="left max-[576px]:w-full w-[180px] max-[576px]:h-[180px] overflow-hidden rounded-2xl">
+            <img src="./assets/2.jpeg" alt="image of a red jacket" class="object-cover max-[576px]:object-contain max-[425px]:object-cover w-full h-full">
+        </div>
+        <div class="right flex-1 text-[#13131880] flex flex-col gap-2">
+            <div class="flex items-center gap-4">
+                <div class="flex items-center font-medium gap-2">
+                    <img src="./assets/star.svg" alt="star icon">
+                    <span class="text-lg">5.0</span>
+                </div>
+                <div class="flex items-center font-medium gap-2">
+                    <img src="./assets/eye.svg" alt="eye icon">
+                    <span class="text-lg">20</span>
+                </div>
+                <div class="flex items-center font-medium gap-2">
+                    <img src="./assets/heart.svg" alt="heart icon">
+                    <span class="text-lg">200</span>
+                </div>
+            </div>
+            <h3 class="text-xl font-bold text-[#131318]">World Cup Flags Football</h3>
+            <p class="max-w-[300px] text-[#13131899] font-semibold">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            <div class="flex items-center flex-wrap gap-4 mt-1">
+                <strong class="text-lg text-[#FF4240]">Price - $22.00</strong>
+                <div class="flex items-center font-medium gap-2">
+                    <img src="./assets/delivery.svg" alt="delivery icon">
+                    <span>Delivery Fee : Free</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

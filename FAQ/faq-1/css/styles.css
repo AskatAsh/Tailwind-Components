@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    font-family: "Manrope", sans-serif;
+}
+.accordion li:has(input[type="radio"]:checked) label + .content{
+    max-height: 400px;
+}

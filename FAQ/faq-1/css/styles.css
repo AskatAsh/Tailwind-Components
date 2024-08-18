@@ -3,5 +3,6 @@
     font-family: "Manrope", sans-serif;
 }
 .accordion li:has(input[type="radio"]:checked) label + .content{
-    max-height: 400px;
+    max-height: 300px;
+    padding-top: 1.25rem;
 }

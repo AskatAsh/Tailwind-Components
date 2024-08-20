@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="flex justify-center items-center h-screen">
+    <section class="max-w-7xl w-11/12 mx-auto flex flex-col md:flex-row gap-6">
+        <div class="contacts flex flex-col gap-6 border-2 border-[#1313181A] rounded-xl p-5 md:p-8 w-full md:max-w-[374px] xl:max-w-[474px]">
+            <div class="text-lg p-8 rounded-xl bg-[#BCED6D1A]">
+                <img src="./assets/Phone.png" alt="icon of a phone">
+                <p class="text-[#13131866] mt-6">Phone Number : <br>
+                    <strong class="text-[#131318]">(+62) 123-321-543</strong>
+                </p>
+            </div>
+            <div class="text-lg p-8 rounded-xl bg-[#FDDD5F1A]">
+                <img src="./assets/Mail.png" alt="icon of a email">
+                <p class="text-[#13131866] mt-6">Email : <br>
+                    <strong class="text-[#131318]">hockeys@support.com</strong>
+                </p>
+            </div>
+            <div class="text-lg p-8 rounded-xl bg-[#629CF31A]">
+                <img src="./assets/Location.png" alt="icon of a phone">
+                <p class="text-[#13131866] mt-6">Location : <br>
+                    <strong class="text-[#131318]">152/1 Mohakhali Wireless Gate</strong>
+                </p>
+            </div>
+        </div>
+
+        <form class="grid grid-cols-1 lg:grid-cols-2 gap-6 flex-1">
+            <div class="flex flex-col gap-4">
+                <label class="text-xl font-bold" for="name">Your Name</label>
+                <input class="bg-[#13131808] rounded-xl p-5 placeholder:text-[#1313184D] text-base" type="text" name="name" id="name" placeholder="Enter your full name">
+            </div>
+            <div class="flex flex-col gap-4">
+                <label class="text-xl font-bold" for="email">Your Email</label>
+                <input class="bg-[#13131808] rounded-xl p-5 placeholder:text-[#1313184D] text-base" type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="flex flex-col gap-4">
+                <label class="text-xl font-bold" for="subject">Your Subject</label>
+                <input class="bg-[#13131808] rounded-xl p-5 placeholder:text-[#1313184D] text-base" type="text" name="subject" id="subject" placeholder="Enter your subject">
+            </div>
+            <div class="flex flex-col gap-4">
+                <label class="text-xl font-bold" for="phone">Phone Number</label>
+                <input class="bg-[#13131808] rounded-xl p-5 placeholder:text-[#1313184D] text-base" type="text" name="phone" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="flex flex-col gap-4 col-auto lg:col-span-2">
+                <label class="text-xl font-bold" for="message">Message</label>
+                <textarea class="bg-[#13131808] rounded-xl p-5 placeholder:text-[#1313184D] text-base" name="message" id="message" placeholder="Write your message" rows="10"></textarea>
+            </div>
+            <button class="text-xl font-semibold text-white bg-[#FF4240] rounded-xl p-4 col-auto lg:col-span-2">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>

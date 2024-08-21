@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card 1</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                card_bg_1: '#E7C1D3',
+                card_bg_2: '#EFDA6E',
+                card_bg_3: '#A4DAC3',
+                card_bg_4: '#77AAEA',
+                dark_1: '#212121',
+                dark_2: '#494949',
+                dark_3: '#737373',
+              },
+              fontFamily: {
+                manrope: ["Manrope", "sans-serif"]
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-[##F4F4F4] font-manrope">
+    <section class="w-11/12 xl:w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-6 mt-10">
+        <!-- card 1 -->
+        <div class="border-2 border-[#1313181A] rounded-2xl p-5 md:p-6 flex flex-col sm:flex-row lg:flex-col gap-5 max-[576px]:gap-4">
+            <div class="sm:w-[240px] h-[196px] lg:w-full overflow-hidden rounded-xl">
+                <img src="./assets/article1.png" alt="image of a red jacket" class="object-cover w-full h-full">
+            </div>
+            <div class="right flex-1 text-[#13131880] flex flex-col gap-2">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center font-medium gap-2">
+                        <img src="./assets/calendar.svg" alt="star icon">
+                        <span class="text-sm font-medium text-dark_3">July 14, 2024</span>
+                    </div>
+                    <div class="flex items-center font-medium gap-2">
+                        <img src="./assets/calendar.svg" alt="eye icon">
+                        <span class="text-sm font-medium text-dark_3">By Admin</span>
+                    </div>
+                </div>
+                <h3 class="text-xl font-extrabold text-dark_2">How to choose the furniture right  of your home.</h3>
+                <p class="text-dark_3 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                <button class="flex items-center font-bold gap-2 text-xl text-dark_1 mt-2">
+                    <span>Read More</span>
+                    <img src="./assets/arrow-up-right-01.svg" alt="delivery icon">
+                </button>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="border-2 border-[#1313181A] rounded-2xl p-5 md:p-6 flex flex-col sm:flex-row lg:flex-col gap-5 max-[576px]:gap-4">
+            <div class="sm:w-[240px] h-[196px] lg:w-full overflow-hidden rounded-xl">
+                <img src="./assets/article2.png" alt="image of a red jacket" class="object-cover w-full h-full">
+            </div>
+            <div class="right flex-1 text-[#13131880] flex flex-col gap-2">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center font-medium gap-2">
+                        <img src="./assets/calendar.svg" alt="star icon">
+                        <span class="text-sm font-medium text-dark_3">July 14, 2024</span>
+                    </div>
+                    <div class="flex items-center font-medium gap-2">
+                        <img src="./assets/calendar.svg" alt="eye icon">
+                        <span class="text-sm font-medium text-dark_3">By Admin</span>
+                    </div>
+                </div>
+                <h3 class="text-xl font-extrabold text-dark_2">How to choose the furniture right  of your home.</h3>
+                <p class="text-dark_3 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                <button class="flex items-center font-bold gap-2 text-xl text-dark_1 mt-2">
+                    <span>Read More</span>
+                    <img src="./assets/arrow-up-right-01.svg" alt="delivery icon">
+                </button>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="border-2 border-[#1313181A] rounded-2xl p-5 md:p-6 flex flex-col sm:flex-row lg:flex-col gap-5 max-[576px]:gap-4">
+            <div class="sm:w-[240px] h-[196px] lg:w-full overflow-hidden rounded-xl">
+                <img src="./assets/article3.png" alt="image of a red jacket" class="object-cover w-full h-full">
+            </div>
+            <div class="right flex-1 text-[#13131880] flex flex-col gap-2">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center font-medium gap-2">
+                        <img src="./assets/calendar.svg" alt="star icon">
+                        <span class="text-sm font-medium text-dark_3">July 14, 2024</span>
+                    </div>
+                    <div class="flex items-center font-medium gap-2">
+                        <img src="./assets/calendar.svg" alt="eye icon">
+                        <span class="text-sm font-medium text-dark_3">By Admin</span>
+                    </div>
+                </div>
+                <h3 class="text-xl font-extrabold text-dark_2">How to choose the furniture right  of your home.</h3>
+                <p class="text-dark_3 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                <button class="flex items-center font-bold gap-2 text-xl text-dark_1 mt-2">
+                    <span>Read More</span>
+                    <img src="./assets/arrow-up-right-01.svg" alt="delivery icon">
+                </button>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

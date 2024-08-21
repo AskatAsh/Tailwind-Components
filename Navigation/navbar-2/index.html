@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar-2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="flex justify-between items-center w-11/12 xl:w-full max-w-7xl mx-auto my-10">
+            <div class="flex text-3xl md:text-4xl font-extrabold order-1 md:order-1"><img src="./assets/arrow-up-right-01.svg" alt=""><span class="ml-2">Rinterio</span></div>
+
+            <ul class="order-3 lg:order-2 relative">
+                <li>
+                    <input type="checkbox" name="menu-btn" id="menu-btn" class="hidden">
+                    <label for="menu-btn" href="#" class="menu-btn lg:hidden block w-12 h-12 flex items-center justify-center bg-white rounded-full border-[1px] border-[#E9E9E9] ml-3 cursor-pointer"><img src="./assets/menu-icon.svg" alt="Menu icon"></label>
+
+                    <ul class="lg:items-center absolute right-0 lg:static px-3 py-2 mt-4 lg:mt-0 shadow-md lg:shadow-none hidden flex-col lg:flex lg:flex-row gap-3 lg:gap-7 xl:gap-9 z-10 rounded-md bg-white lg:bg-transparent text-[#737373] w-[120px] lg:w-full" id="nav-links">
+                        <li><a href="#" class="text-[#494949] hover:text-[#494949] font-bold">Home</a></li>
+                        <li><a href="#" class="hover:font-bold hover:text-[#494949]">Services</a></li>
+                        <li><a href="#" class="hover:font-bold hover:text-[#494949]">Portfolio</a></li>
+                        <li><a href="#" class="hover:font-bold hover:text-[#494949]">Blogs</a></li>
+                        <li><a href="#" class="hover:font-bold hover:text-[#494949]">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="nav-buttons order-2 flex-1 lg:flex-none flex justify-end items-center space-x-3 hidden sm:flex">
+                <button class="w-12 h-12 flex items-center justify-center bg-white rounded-full border-[1px] border-[#E9E9E9]"><img class="w-6 h-6" src="./assets/search-01.svg" alt="search icon"></button>
+
+                <button class="w-12 h-12 flex items-center justify-center bg-white rounded-full border-[1px] border-[#E9E9E9]"><img class="w-6 h-6" src="./assets/shopping-cart-01.svg" alt="search icon"></button>
+
+                <button class="bg-[#ABEF5F] py-2 px-4 rounded-full text-[#1C1C1C] text-lg font-extrabold md:text-xl flex items-center justify-center"><span class="mr-2">Book Consult</span> <img class="w-6 h-6" src="./assets/arrow-up-right-02.svg" alt=""></button>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

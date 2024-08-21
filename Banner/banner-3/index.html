@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                dark_1: '#212121',
+                dark_2: '#494949',
+                lightgreen: '#ABEF5F',
+                lightgreen_50: '#ABEF5F80',
+              },
+              fontFamily: {
+                manrope: ["Manrope", "sans-serif"]
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-manrope">
+    <section class="my-10 w-11/12 xl:w-full max-w-7xl mx-auto flex flex-col items-center gap-6">
+        <div class="mx-auto max-w-64 sm:max-w-96 md:max-w-md lg:max-w-lg xl:max-w-xl w-full">
+            <img class="w-full h-full object-cover" src="./assets/banner-image.png" alt="image of a house">
+        </div>
+        <h1 class="w-full sm:max-w-[610px] lg:max-w-[1084px] text-3xl text-dark_1 md:text-4xl lg:text-5xl xl:text-[64px] xl:leading-snug text-center font-extrabold">A barn house of this design  has a striking appearance</h1>
+        <p class="px-1 md:px-0 w-full sm:max-w-[570px] lg:max-w-[970px] text-center text-sm sm:text-base text-dark_2 font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <button class="bg-lightgreen_50 rounded-full flex gap-2 justify-center items-center font-bold text-dark_1 text-lg py-2.5 px-6 border-[1px] border-lightgreen mt-2 max-[576px]:w-full block">
+            <span>View Details</span>
+            <img src="./assets/arrow-up-right-01.svg" alt="" class="w-8 h-8">
+        </button>
+    </section>
+</body>
+</html>

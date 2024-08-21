@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+/* *{
+    font-family: "Manrope", sans-serif;
+} */
+ h1, h2{
+    /* text-shadow: 0px 0px 2px #212121; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #212121;
+ }

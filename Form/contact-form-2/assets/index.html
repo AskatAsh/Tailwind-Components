@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                dark_1: '#212121',
+                dark_2: '#494949',
+                dark_3: '#717171',
+                lightgreen: '#ABEF5F',
+                lightgreen_50: '#ABEF5F80',
+              },
+              fontFamily: {
+                manrope: ["Manrope", "sans-serif"]
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-manrope">
+    <section>
+        <button class="bg-white font-sm text-dark_2 px-5 py-3 font-semibold rounded-full flex items-center gap-2 mx-auto">
+            <img src="./assets/arrow-right.svg" alt="">
+            <span>About Us</span>
+        </button>
+        <h2 class="section-title about-us-title text-dark_2 font-extrabold text-center mb-6 mt-4 text-2xl sm:text-3xl lg:text-5xl leading-tight lg:leading-tight">Let’s Discuss Next Project</h2>
+        <p class="font-medium text-base text-dark_2 mb-8 text-center mx-5 sm:mx-0 max-w-[670px] md:mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication featuring weathered wood, sleek metal accents.</p>
+    </section>
+</body>
+</html>

@@ -16,9 +16,11 @@
           theme: {
             extend: {
               colors: {
+                dark: '#1c1c1c',
                 dark_1: '#212121',
                 dark_2: '#494949',
                 dark_3: '#717171',
+                dark_4: '#A0A0A0',
                 lightgreen: '#ABEF5F',
                 lightgreen_50: '#ABEF5F80',
                 lemon_20: 'rgba(171, 239, 95, 0.2)',
@@ -39,6 +41,25 @@
         </button>
         <h2 class="section-title about-us-title text-dark_2 font-extrabold text-center mb-6 mt-5 text-2xl sm:text-3xl lg:text-5xl leading-tight lg:leading-tight">Let’s Discuss Next Project</h2>
         <p class="font-medium text-base text-dark_2 mb-8 text-center mx-5 sm:mx-0 max-w-[670px] md:mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication featuring weathered wood, sleek metal accents.</p>
+
+        <form class="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6 flex-1 max-w-[970px] w-11/12 mx-auto">
+            <div class="flex flex-col gap-4">
+                <input class="bg-white rounded-full p-4 md:p-5 placeholder:text-dark_4 text-base placeholder:font-medium border-[1px] border-[#E9E9E9]" type="text" name="firstname" placeholder="First Name*">
+            </div>
+            <div class="flex flex-col gap-4">
+                <input class="bg-white rounded-full p-4 md:p-5 placeholder:text-dark_4 text-base placeholder:font-medium border-[1px] border-[#E9E9E9]" type="text" name="subject" placeholder="Last Name*">
+            </div>
+            <div class="flex flex-col gap-4">
+                <input class="bg-white rounded-full p-4 md:p-5 placeholder:text-dark_4 text-base placeholder:font-medium border-[1px] border-[#E9E9E9]" type="text" name="phone" placeholder="Phone Number*">
+            </div>
+            <div class="flex flex-col gap-4">
+                <input class="bg-white rounded-full p-4 md:p-5 placeholder:text-dark_4 text-base placeholder:font-medium border-[1px] border-[#E9E9E9]" type="email" name="email" placeholder="Email*">
+            </div>
+            <div class="flex flex-col gap-4 col-auto sm:col-span-2">
+                <textarea class="bg-white rounded-[32px] p-4 md:p-5 placeholder:text-dark_4 text-base placeholder:font-medium border-[1px] border-[#E9E9E9]" name="message" placeholder="Write your message here" rows="8"></textarea>
+            </div>
+            <button class="bg-[#ABEF5F] py-3.5 px-4 rounded-full text-[#1C1C1C] text-lg font-extrabold sm:text-xl flex items-center justify-center sm:col-span-2"><span class="mr-2">Send Mail</span> <img class="w-7 sm:w-auto" src="./assets/arrow-up-right-02.svg" alt=""></button>
+        </form>
     </section>
 </body>
 </html>

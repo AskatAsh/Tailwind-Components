@@ -3,5 +3,5 @@
     -webkit-text-stroke-color: #212121;
 }
 .contact-section{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../assets/bg.jpg');
+    background-image: linear-gradient(rgba(244, 244, 244, 0.5), rgba(244, 244, 244, 0.5)), url('../assets/bg.jpg');
 }

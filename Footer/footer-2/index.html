@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer 2</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#1c1c1c',
+                        dark_1: '#212121',
+                        dark_2: '#494949',
+                        dark_3: '#717171',
+                        dark_4: '#A0A0A0',
+                        lightgreen: '#ABEF5F',
+                        lightgreen_50: '#ABEF5F80',
+                        lemon_20: 'rgba(171, 239, 95, 0.2)',
+                    },
+                    fontFamily: {
+                        manrope: ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-manrope">
+    <footer class="bg-[#1C1C1C] py-[72px] md:py-[100px]">
+        <div class="max-w-7xl w-11/12 mx-auto">
+            <div class="flex items-start text-3xl text-[#E9E9E9] font-extrabold justify-center mb-4">
+                <img src="./assets/arrow-up-right-01.svg" alt="">
+                <span class="ml-2">Rinterio</span>
+            </div>
+            <p class="text-[#737373] text-center max-w-[670px] px-4 md:px-0 mx-auto leading-relaxed">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <ul class="text-[#E9E9E9] font-base flex items-center flex-col sm:flex-row text-center space-y-6 sm:space-y-0 my-8 md:my-12  justify-between sm:max-w-[690px] lg:max-w-[776px] px-5 lg:px-0 mx-auto">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button
+                class="bg-lightgreen py-3 px-5 rounded-full text-[#1C1C1C] font-extrabold text-xl flex items-center justify-center mx-auto w-full sm:w-auto">
+                <span class="mr-2">Book Consult</span>
+                <img src="./assets/arrow-up-right-02.svg" alt="">
+            </button>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

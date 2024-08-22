@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #f4f4f4;
+}
+.container{
+    margin-inline: auto;
+    max-width: 1280px;
+    width: 90%;
+    border: 2px solid red;
+    display: flex;
+    gap: 1.75rem;
+    margin-top: 50px;
+}
+.container .container__left{
+    flex: 1;
+    border: 4px solid orange;
+    position: relative;
+}
+.container__left .arrow-img{
+    position: absolute;
+    top: -60px;
+    left: -50px;
+}
+.container__left button{
+    background-color: white;
+    border: none;
+    font-size: 0.875rem;
+    color: #717171;
+    font-weight: bold;
+    padding: 0.65rem 1.25rem;
+    border-radius: 50px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.container__left h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #212121;
+    margin-top: 1rem;
+}
+.container__left .text{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #494949;
+    margin-block: 1.5rem;
+}
+.container .card{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 1rem;
+    background-color: white;
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+.container__left .card h3{
+    font-size: 1.5rem;
+    color: #212121;
+    font-weight: 700;
+}
+.container__left .card p{
+    font-size: 1.25rem;
+    color: #717171;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+.container .container__right{
+    flex: 1;
+    border: 4px solid green;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container__right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        flex-direction: column;
+    }
+    .container__right{
+        max-height: 450px;
+    }
+    .container__right img{
+        object-position: 0 -70px;
+    }
+    .container .cards{
+        display: flex;
+        gap: 1.75rem;
+    }
+    .container__left button{
+        margin-inline: auto;
+    }
+    .container__left h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .container__left .text{
+        margin-inline: 1.25rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container__left .arrow-img{
+        display: none;
+    }
+    .container__right{
+        max-height: 400px;
+    }
+    .container__right img{
+        object-position: 0 0;
+    }
+    .container .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+    }
+    .container .cards .card{
+        margin-top: 0;
+    }
+    .container__left button{
+        margin-inline: auto;
+    }
+    .container__left h2{
+        text-align: center;
+    }
+    .container__left .text{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container__right{
+        max-height: 300px;
+    }
+}
